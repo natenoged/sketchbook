@@ -1,0 +1,26 @@
+/* Style for the entire body */
+body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Set height to viewport height */
+    overflow: hidden; /* Hide content that overflows the viewport */
+    background-color: #f0f0f0; /* Light gray background color */
+    user-select: none; /* Disable text selection */
+}
+
+/* Style for the draggable image container */
+.image-container {
+    position: absolute; /* Position absolutely within the viewport */
+    cursor: move; /* Change cursor to 'move' when hovering */
+    resize: both; /* Enable resizing in both directions */
+    overflow: auto; /* Enable scrolling for overflow */
+    border: 1px dashed #616161; /* Dashed border for visibility */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(.5px);
+}
+
+/* Style for the images within the container */
+.image-container img {
+    width: 100%; /* Restrict image width to container width */
+    height: 100%; /* Restrict image height to container height */
+    display: block; /* Ensure the image is block-level for proper resizing */
+}
