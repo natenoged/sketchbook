@@ -5,7 +5,46 @@ body {
     overflow: hidden; /* Hide content that overflows the viewport */
     background-color: #f0f0f0; /* Light gray background color */
     user-select: none; /* Disable text selection */
+    font-family: 'Roboto Mono', monospace;
 }
+
+/*Link button*/
+.link-block {
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    
+    padding: 7px 15px;
+    background: #ededed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1.5px solid #0000ff;
+    border-radius: 3px;
+    text-decoration: none;
+    position: absolute;
+    z-index: 999;
+    color: #0000ff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .link-text{
+opacity: 60%;
+color: #0000ff;
+
+  }
+
+  .link-text:hover{ 
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+  .link-arrow,
+  .link-description {
+    
+    word-wrap: break-word;
+  }
 
 /* Style for the draggable image container */
 .image-container {
@@ -24,3 +63,4 @@ body {
     height: 100%; /* Restrict image height to container height */
     display: block; /* Ensure the image is block-level for proper resizing */
 }
+
